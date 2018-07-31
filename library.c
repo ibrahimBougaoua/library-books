@@ -1,23 +1,24 @@
+/*
+ * Author: bougaoua,badani
+ * Purpose: Program to manage library books.
+ * Language:  C
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
 
 /**
-* .......................
+* Constants
 */
 #define CMAX 50
 #define TAILLEMAX 1000
 
 /**
-* .......................
+* Support files
 */
 #include "structs.c"
 #include "functions.c"
 
-/**
-* Badani Yahia
-* Bougaoua ibrahim
-*/
 void main() 
 {
 	
