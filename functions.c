@@ -1,7 +1,7 @@
 /**
 * recharche Adherent by id.
 *
-* int id.
+* @param int id.
 *
 * @return int .
 */
@@ -32,7 +32,7 @@ int SearchAdherent(int id)
 /**
 * recharche Livres by id.
 *
-* int id.
+* @param int id.
 *
 * @return int .
 */
@@ -634,7 +634,7 @@ void AfficherListeEmprunteurs()
 /**
 * color.
 *
-* int t,f.
+* @param int t,f.
 *
 */
 void color(int t,int f)
