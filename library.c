@@ -28,8 +28,8 @@ void main()
 	  SetConsoleTitle("Gestion Livre");
 
 	/*
-	  Menu Principale contient tout les choix que vous traiter
-	*/
+	 * Menu Principale contient tout les choix que vous traiter
+ 	*/
 	do
 	{
 	  system("cls");
@@ -44,7 +44,7 @@ void main()
 	  printf("\n\t\t||    Gestion     ||-2-Modifier un Adherent.                                  ||");
 	  printf("\n\t\t||   Adherents    ||-3-Supprimer un Adherent.                                 ||");
 	  printf("\n\t\t||                ||-4-Afficher la liste des Adherents.                       ||");
-      printf("\n\t\t  ----------------------------------------------------------------------------");
+          printf("\n\t\t  ----------------------------------------------------------------------------");
 	  color(14, 0);
 	  printf("\n\t\t  ____________________________________________________________________________");
 	  printf("\n\t\t||                ||-5-Ajouter un Livre.                                      ||");
@@ -75,60 +75,74 @@ void main()
         }while( ch<1 || ch>12 );
      
 	     switch(ch)
-         {
+             {
         	case 1:
-     		      color(9, 0);
-		          AjouterAdherents();
-     		      break;
-     	    case 2:   
-		          color(9, 0);
-     	          ModifierAdherents();
-                  break;
-            case 3:   
-		          color(9, 0);
-     		      SupprimerAdherents();
-     		      break;
-     	    case 4:   
-		          color(9, 0);
-     		      AfficherAdherents();
-     		      break;
-     		case 5:
-		          color(14, 0);
-     		      AjouterLivres();
-     		      break;
-     	    case 6:
-		          color(14, 0);
-     		      ModifierLivres();
-				  break;
-        	case 7:
-		          color(14, 0);
-		          SupprimerLivres();
-				  break;
-     	    case 8:
-		          color(14, 0);
-     		      AfficherLivres();
-				  break;
-			case 9:
-     		      color(13, 0);
-     		      EmprunterLivres();
-    		      break;
-    	    case 10:
-     		      color(13, 0);
-     		      AfficherLivresEmp();
-     		      break;
-     		case 11:
-     		      color(13, 0);
-     		      RendreLivres();
-				  break;
-			case 12:
-			      color(13, 0);
-				  AfficherListeEmprunteurs();
-				  break;
-		    case 13:
-			      color(11, 0);
-				  break;
-				  system("pause");	  
-	      }
+     		color(9, 0);
+		AjouterAdherents();
+     		break;
+     	    
+		case 2:   
+		color(9, 0);
+     	        ModifierAdherents();
+                break;
+            
+		case 3:   
+		color(9, 0);
+     		SupprimerAdherents();
+     		break;
+     	    
+		case 4:   
+		color(9, 0);
+     		AfficherAdherents();
+     		break;
+     		
+		case 5:
+		color(14, 0);
+     		AjouterLivres();
+     		break;
+     	        
+		case 6:
+		color(14, 0);
+     		ModifierLivres();
+		break;
+        	
+		case 7:
+		color(14, 0);
+		SupprimerLivres();
+		break;
+     	    
+		case 8:
+		color(14, 0);
+     		AfficherLivres();
+		break;
+		
+		case 9:
+     		color(13, 0);
+     		EmprunterLivres();
+    		break;
+    	    
+		case 10:
+     		color(13, 0);
+     		AfficherLivresEmp();
+     		break;
+     		
+		case 11:
+     		color(13, 0);
+     		RendreLivres();
+		break;
+		
+		case 12:
+		color(13, 0);
+		AfficherListeEmprunteurs();
+		break;
+		
+		case 13:
+		color(11, 0);
+		break;
+		
+                system("pause");	  
+	      
+	     }
 	        color(11, 0);
 	        printf("Voulez Vous Continuez ? (O/N)");
 	        scanf(" %c",&C);
@@ -136,12 +150,12 @@ void main()
         } while( C=='o' || C=='O' );
         
         printf("\n\t\t##############################################################################");
-	  	printf("\n\t\t#                              THANKS                                        #");
-	  	printf("\n\t\t##############################################################################");
-	  	printf("\n\t\t##############################################################################");
-	  	printf("\n\t\t#                       FOR USING THIS PROGRAMME                             #");
-	  	printf("\n\t\t##############################################################################");
-	  	SYSTEMTIME t;
+	printf("\n\t\t#                              THANKS                                        #");
+	printf("\n\t\t##############################################################################");
+	printf("\n\t\t##############################################################################");
+	printf("\n\t\t#                       FOR USING THIS PROGRAMME                             #");
+	printf("\n\t\t##############################################################################");
+	SYSTEMTIME t;
         GetSystemTime(&t);
         printf("\n\t\t******************************************************************************");
         printf("\n\t\t*\t\tDate\t\t*\t\t*\tHeure\t\t     *");
